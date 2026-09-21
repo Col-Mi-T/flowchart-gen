@@ -1,7 +1,7 @@
 
 console.log("Flowchart Generator Started");
 async function start() {
-    const engine = await import(".engine/link.js");
+    const engine = await import("../engine/link.js")
     const lang = await document.getElementById("language-select").value;
     const code = await document.getElementById("code-input").value;
     console.log("Selected Language:", lang);
