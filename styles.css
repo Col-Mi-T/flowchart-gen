@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #003659;
+    --secondary-color: #2ecc71;
+    --font-family: 'Arial', sans-serif;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f4f4f4;
+
+    /* Turn body into a vertical flex container */
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+
+#content {
+    padding: 20px;
+    font-family: var(--font-family);
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+#select-lang{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#language-select{
+    align-self: center;
+    width:200px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #5c5c5c;
+}
+#language-select option{
+    padding: 5px;
+    font-size: 16px;
+    color: var(--primary-color);
+    border-radius: 20px;
+}
+
+#input-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, #2ecc71, #005f28);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#output-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(to right, #2ecc71, #005f28);
+    border-radius: 10px;
+    padding: 20px;
+}
+#flowchart-output{
+    border: 1px solid #5c5c5c;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
+}
+
+
+#code-input-section{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+#generate-button{
+    padding:10px 2px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #5c5c5c;
+    width:150px;
+
+}
+#code-input{
+    width: 300px;
+    height: 150px;
+    min-width: 300px;
+    min-height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #5c5c5c;
+}
+
+@media (max-width: 600px) {
+    #content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

@@ -4,8 +4,39 @@
 
 <head>
     <title>Code To Flowchart Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    
+    <div id="header">
+        <h1>FlowChart Generator</h1>
+        <p>...</p>
+    </div>
+
+    <div id="content">
+
+        <div id="input-section">
+            <div id="select-lang">
+            <h2>Select Language</h2>
+            <select id="language-select">
+                <option value="python">Python</option>
+                <option value="lang">Choose a Language</option>
+                </select></div>
+                
+            <div id="code-input-section">
+                <h2>Input Code</h2>
+                <textarea id="code-input" placeholder="Enter your code here..."></textarea>
+                <button id="generate-button">Generate Flowchart</button>
+            </div>
+        </div>
+
+        <div id="output-section">
+            <h2>Flowchart Output</h2>
+            <svg id="flowchart-output"></svg>
+        </div>
+    </div>
+
+    <div id="footer"></div>
 </body>
+
+<script src="main.js"></script>
