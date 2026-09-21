@@ -26,7 +26,7 @@ enum NodeType {
     SubroutineDecl,
     DecisionTrue,
     DecisionFalse,
-    DecisionLoop
+    DecisionLoop,
 }
 
 
