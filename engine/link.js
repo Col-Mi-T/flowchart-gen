@@ -1,4 +1,4 @@
-import init, { create_chart } from "./pkg/engine.js";
+import init, { create_chart } from "./engine/pkg/engine.js";
 
 export async function flowchartEngine() {
     console.log("Initializing Flowchart WASM module...");
